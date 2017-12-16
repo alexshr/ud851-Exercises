@@ -26,15 +26,15 @@ import com.firebase.jobdispatcher.Job;
 import com.firebase.jobdispatcher.Lifetime;
 import com.firebase.jobdispatcher.Trigger;
 
-import java.util.concurrent.TimeUnit;
-
 public class ReminderUtilities {
     /*
      * Interval at which to remind the user to drink water. Use TimeUnit for convenience, rather
      * than writing out a bunch of multiplication ourselves and risk making a silly mistake.
      */
-    private static final int REMINDER_INTERVAL_MINUTES = 15;
-    private static final int REMINDER_INTERVAL_SECONDS = (int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
+    //private static final int REMINDER_INTERVAL_MINUTES = 15;
+    //private static final int REMINDER_INTERVAL_SECONDS = (int) (TimeUnit.MINUTES.toSeconds(REMINDER_INTERVAL_MINUTES));
+
+    private static final int REMINDER_INTERVAL_SECONDS =20;
     private static final int SYNC_FLEXTIME_SECONDS = REMINDER_INTERVAL_SECONDS;
 
     private static final String REMINDER_JOB_TAG = "hydration_reminder_tag";
